@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Home | Profile Construction</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Dave Green(davegreen@live.co.za)">
+	<meta name="description" content="SEO description"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/fresco/fresco.css" />
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/fresco/fresco.js"></script>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".jumper").on("click", function( e ) {
+
+				e.preventDefault();
+
+				$("body, html").animate({ 
+					scrollTop: $( $(this).attr('href') ).offset().top - 100
+				}, 1200);
+
+			});
+		});
+	</script>
+</head>
+<body>
+
+	<section class="hero"  style="position:fixed !important; background: transparent URL(img/feature3.jpg) no-repeat scroll center bottom / cover;">
+		<header style="z-index: 20 !important; position: absolute !important;">
+			<div class="wrapper">
+				<a href="index.html"><img src="img/profile_con.png" class="logo" alt="Profile Construction Logo" title="Profile Construction Logo" width="115" style="margin-top: 10px;"/></a>
+				<a href="#" class="hamburger"></a>
+				<nav>
+					<ul>
+						<li><a class="jumper" href="#about">About</a></li>
+						<li><a class="jumper" href="#gallery">Projects</a></li>
+						<li><a class="jumper" href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header><!--  end header section  -->
+
+			<section class="caption" style="z-index:0 !important; background: rgba(183, 255, 75, 0.4) !important;">
+				<h2 class="caption" style="color: #000; opacity: 0.8 !important;">Profile Construction</h2>
+				<h3 class="properties" style="color: #000; opacity: 1 !important;">Alterations - Construction - Maintenance</h3>
+			</section>
+	</section><!--  end header section  -->
+
+	<section class="listings"><div id="about"></div>
+		<div class="wrapper" style="background: #fff !important; width: 50% !important; padding: 10px !important">
+			<ul class="properties_list">
+			<h1>About Us</h1>
+				<li style="width: 100% !important">
+					<!--  <img src="img/hero.jpg" alt="About Us Image" title="About Us" class="property_img" style="width: 100% !important"/>  -->
+					<div class="property_details">
+						<h1>Our Story</h1>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis nulla dui, sit amet auctor arcu dignissim sed. Duis in metus eu dui tincidunt lobortis. Maecenas eget finibus ipsum. Aenean elit arcu, pulvinar tincidunt nunc quis, aliquam maximus enim. Quisque ultricies nunc in hendrerit interdum. Quisque molestie venenatis faucibus. Morbi dictum gravida iaculis. Sed tempor luctus mauris non tincidunt.</h2>
+						<br>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis nulla dui, sit amet auctor arcu dignissim sed. Duis in metus eu dui tincidunt lobortis. Maecenas eget finibus ipsum. Aenean elit arcu, pulvinar tincidunt nunc quis, aliquam maximus enim. Quisque ultricies nunc in hendrerit interdum. Quisque molestie venenatis faucibus. Morbi dictum gravida iaculis. Sed tempor luctus mauris non tincidunt. <span class="property_size">(Lorem ipsum)</span></h2>
+					</div>
+				</li>				
+			</ul>
+		</div>
+	</section>	<!--  end about section  -->
+
+	<section class="listings"><div id="gallery"></div>
+		<div class="wrapper" style="background: #fff !important; padding: 10px !important">
+			<ul class="properties_list">
+				<h1>Projects</h1>
+				<li>
+					<a href='img/property_1.jpg' class='fresco' data-fresco-group='Project1' data-fresco-caption="This can be a description">
+						<img src="img/property_1.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">Jan 2013</span>
+					<div class="property_details">
+						<h1>Fuisque dictum tortor at purus libero</h1>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis nulla dui, sit amet auctor arcu dignissim sed. Duis in metus eu dui tincidunt lobortis. Maecenas eget finibus ipsum. Aenean elit arcu, pulvinar tincidunt nunc quis, aliquam maximus enim. Quisque ultricies nunc in hendrerit interdum. Quisque molestie venenatis faucibus. Morbi dictum gravida iaculis. Sed tempor luctus mauris non tincidunt. <span class="property_size">(Lorem ipsum)</span></h2>
+					</div>
+				</li>
+				<li>
+					<a href='img/property_2.jpg'
+						 class='fresco'
+						 data-fresco-group='Project2'
+						 data-fresco-caption="This can be a description">
+						<img src="img/property_2.jpg" alt="" title="" class="property_img"/>
+					  </a>
+					<span class="price">Mar 2013</span>
+					<div class="property_details">
+						<ul>
+							<li>
+								<a href='img/property_1.jpg' class='fresco' data-fresco-group='Project2' data-fresco-caption="This can be a description">
+									<img src="img/property_1.jpg" alt="" title="" width="100"/>
+								</a>
+							</li>
+							<li>
+								<a href='img/property_2.jpg' class='fresco' data-fresco-group='Project2' data-fresco-caption="This can be a description">
+									<img src="img/property_2.jpg" alt="" title="" width="100"/>
+								</a>
+							</li>
+							<li>
+								<a href='img/property_3.jpg' class='fresco' data-fresco-group='Project2' data-fresco-caption="This can be a description">
+									<img src="img/property_3.jpg" alt="" title="" width="100"/>
+								</a>
+							</li>
+							<li>
+								<a href='img/property_1.jpg' class='fresco' data-fresco-group='Project2' data-fresco-caption="This can be a description">
+									<img src="img/property_1.jpg" alt="" title="" width="100"/>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href='img/property_3.jpg' class='fresco' data-fresco-group='Project3' data-fresco-caption="This can be a description">
+						<img src="img/property_3.jpg" alt="" title="" class="property_img"/>
+					</a>
+					<span class="price">TBA</span>
+					<div class="property_details">
+						<h1>Fuisque dictum tortor at purus libero</h1>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis nulla dui, sit amet auctor arcu dignissim sed. <span class="property_size">(Lorem ipsum)</span></h2>
+					</div>
+				
+		</div>
+	</section>	<!--  end gallery section  -->
+	
+	<section class="listings"><div id="contact"></div>
+		<div class="wrapper" style="background: #fff !important; width: 50% !important; padding: 10px !important">
+			<ul class="properties_list">
+			<h1>Contact Us</h1>
+				<li style="width: 100% !important">
+					<!--  <img src="img/hero.jpg" alt="" title="" class="property_img" style="width: 100% !important"/> -->
+					<div class="property_details">
+						<h1>Email:	<a href="mailto:info@profilecon.com">info@profilecon.co.za</a></h1>
+						<h1>Tel:	011 548 0589</h1>
+						<h1>Cell:	082 548 0589</h1>
+						<br>
+						<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis nulla dui, sit amet auctor arcu dignissim sed. Duis in metus eu dui tincidunt lobortis. Maecenas eget finibus ipsum. Aenean elit arcu, pulvinar tincidunt nunc quis, aliquam maximus enim. Quisque ultricies nunc in hendrerit interdum. Quisque molestie venenatis faucibus. Morbi dictum gravida iaculis. Sed tempor luctus mauris non tincidunt. <span class="property_size">(Lorem ipsum)</span></h2>
+						
+					</div>
+				</li>				
+			</ul>
+		</div>
+	</section>	<!--  end contact section  -->
+
+	<footer style="background: #52CC29 !important; position: absolute !important; padding-top:20px; width: 100% !important;">
+		<div style="background: #52CC29 !important; position: absolute !important; padding-top:20px; width: 100% !important;">
+			<div class="wrapper footer" style="background: #52CC29 !important; padding: 0px !important; width: 100% !important;">
+				<ul style="background: #52CC29 !important; width: 100% !important;">
+					<li class="links" style="border: none !important;">
+						<ul>
+							<li><a class="jumper" href="#about">About</a></li>
+						</ul>
+					</li>
+
+					<li class="links" style="border: none !important;">
+						<ul>
+							<li><a class="jumper" href="#gallery">Projects</a></li>
+						</ul>
+					</li>
+
+					<li class="links" style="border: none !important;">
+						<ul>
+							<li><a class="jumper" href="#contact">Contact</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+			<div class="copyrights wrapper" style="background: #52CC29 !important; width: 100% !important;">
+				Copyright © 2015. All Rights Reserved.
+			</div>
+		</div>
+	</footer><!--  end footer  -->
+	
+</body>
+</html>
